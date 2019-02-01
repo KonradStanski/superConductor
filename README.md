@@ -10,7 +10,7 @@ This would not have been possible to make without the incredible mentorship give
 3. make sure that numpy is installed
 4. run the python file with python3
 
-<iframe src="https://giphy.com/embed/2ifUHBli1b1HpRr3Ii" width="478" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+# Explanation of Physics behind Simulation
 
 ## What is Super Conductivity?
 Superconductivity is a state that certain materials can take where they 
@@ -42,4 +42,51 @@ quantum energy state.
 
 ![Alt text](img/bcs.png "Cooper Pair Formation")
 
-## 
+## Type I and Type II Super Conductors
+There are thirsty pure metals which exhibit zero resistance when a low 
+temperaturs. These are type I superconductors, and also the type that is 
+being modeled by this simulation. These are modeled by BCS theory and 
+are relatively well understood. 
+
+Type II superconductors are those which are made from alloys and cuprate 
+like substances. They have the interesting property of flux pinning, 
+where they pin the superconductor to its position in a magnetic field 
+when inbetwenn the first and second critical temperatures. BCS theory 
+fails to accuratly describe type II superconductors. There are no fully 
+worked out explanations as to how these work.
+
+![Alt text](img/supercontype.png "Type I and Type II Super Conductors")
+
+## The XY Model
+This is a model commonly used to describe superconductivity and 
+superfluidity. It considers how each relative energy state interacts 
+with its four nearest neighbours. This is not a perfect representation, 
+but gives a good approximation.
+
+### A quick note on Statistical Mechanics
+In superconductors, microscopic properties are used to infer and analyze important macroscopic behaviours. With the computational power available, it is impossible to know all information about all of the microscopic states. Statistical Mechanics uses probabilities and statistics to calculate the expected state of the system on a macroscopic level. This means that there are some innacuracies and "guesswork" involved with this simulation.
+
+## Meissner Effect
+The meissner effect is an important property of superconductors. It 
+occurs when the material is making a transition from its normal state of 
+matter to a superconductive states. When this occurs, it 
+
+## Monte Carlo Random Sampling
+The monte carlo random sampling method is a broad class of computational 
+algorithms used in many areas such as condensed matter physics, 
+statistical, analysis, finance, machine learning, and graphics. The core 
+principle is that one can learn about a dynamic and complex system by 
+simulating it with random sampling to obtain "average" numerical 
+results. It uses principles of randomness to provde solutions to 
+problems that are often deterministic in nature. This is usefull for 
+problems that have exponentialy growing computational needs and time 
+complexity.
+
+## PseudoCode
+1. Generate a N by M lattice with "rotors" with random phase angles indicating the relative quantum energy state of the cooper-pairs.
+2.Specify the temperature of the "heat bath"/ canonical ensemble.
+3. choose a random lattice site and choose a random new possible phase for the rotor.
+4. Calculate the energy difference between this lattice and its 4 nearest neighbours using the XY model.
+5. if the change in energy from the new possible random phase is deltaE<=0, accept the move.
+6. If deltaE > 0, accept the change with a probability of e^(deltaE/(kBT)). This equation is dependent on the boltzmann constant, temperature, and the change in energy.
+7. Repeat from step 3.
