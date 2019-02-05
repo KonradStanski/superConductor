@@ -1,6 +1,6 @@
 # Super Conductor Simulation
 This is a visual representation of the quantum phase states of the cooper pair bonding present within a type I superconductor.
-I learned all the physics present within this simulation while there. 
+I learned all the physics present within this simulation while attending issyp 2016 in Waterloo Ontario. 
 This particular simulation uses the XY Monte Carlo random sampling method to get a running time that is reasonable on a modern pc.
 Running a perfect simulation of a type I superconductor without this statistical approximation would require the computing strength of a
 supercomputer. For this reason, the Monte Carlo random sampling algorithm is a very powerful tool as it allows semi-accurate
