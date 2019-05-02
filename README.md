@@ -1,11 +1,11 @@
 # Super Conductor Simulation
 This is a visual representation of the quantum phase states of the cooper pair bonding present within a type I superconductor.
-I learned all the physics present within this simulation while attending issyp 2016 in Waterloo Ontario. 
+I learned all the physics present within this simulation while attending issyp 2016 in Waterloo Ontario.
 This particular simulation uses the XY Monte Carlo random sampling method to get a running time that is reasonable on a modern pc.
 Running a perfect simulation of a type I superconductor without this statistical approximation would require the computing strength of a
 supercomputer. For this reason, the Monte Carlo random sampling algorithm is a very powerful tool as it allows semi-accurate
 approximations that can help develop an intuition for what is occurring physically.
-This would not have been possible to make without the incredible mentorship given to me at the ISSYP summer camp. 
+This would not have been possible to make without the incredible mentorship given to me at the ISSYP summer camp.
 
 ### Running Instructions:
 1. Ensure that python3 is installed
@@ -19,30 +19,30 @@ This would not have been possible to make without the incredible mentorship give
 Superconductivity is a state that certain materials can take where they have zero electrical resistance. This has some weird side
 effects, the most prominent being that superconductors repel magnetic fields.
 These superconducting states are normally achieved at super low temperatures.
-The holy grail of superconductivity would be a room-temperature 
-superconductor. This would have applications in almost all aspects of day to day life.
+The holy grail of superconductivity would be a room-temperature
+superconductor. This would have applications in almost all aspects of day to day life
 
 ## How are Super Conductors described?
-Type I superconductors are described using the BCS theory model, first 
-proposed in 1957. It won the Nobel prize in physics in 1972. In BCS 
+Type I superconductors are described using the BCS theory model, first
+proposed in 1957. It won the Nobel prize in physics in 1972. In BCS
 theory, the material is modeled as a lattice of positive ions with a sea of free electrons. As an electron moves through this lattice,
-it attracts the positive ions towards it. This region of higher positive charge can have a delayed attractive effect on another 
-electron. Thus, these two electrons can have an indirect "attraction". This pairing is called a 
-cooper pair; a quasi-particle. Because pairs are continually interchanged, the energy required to break anyone cooper pair is the 
+it attracts the positive ions towards it. This region of higher positive charge can have a delayed attractive effect on another
+electron. Thus, these two electrons can have an indirect "attraction". This pairing is called a
+cooper pair; a quasi-particle. Because pairs are continually interchanged, the energy required to break anyone cooper pair is the
 energy required to break all of the pairs. Electrons on their own are fermions and obey the Pauli exclusion principle. As such,
-electrons cannot normally share quantum states. A cooper pair, on the other hand, 
+electrons cannot normally share quantum states. A cooper pair, on the other hand,
 is a boson and can form a bose-einstein condensate. This state of matter allows for the sharing of quantum states, and in this case,
-facilitates the co-existence of all of the cooper pairs in the lowest 
+facilitates the co-existence of all of the cooper pairs in the lowest
 quantum energy state.
 
 ![Alt text](img/bcs.png "Cooper Pair Formation")
 
 ## Type I and Type II Super Conductors
 There are thirty pure metals which exhibit zero resistance under low temperatures. These are type I superconductors, and also the type
-that is being modeled by this simulation. These are modeled by BCS theory and are relatively well understood. 
+that is being modeled by this simulation. These are modeled by BCS theory and are relatively well understood.
 
 Type II superconductors are those which are made from alloys and cuprate like substances. They have the interesting property of flux
-pinning, 
+pinning,
 where they pin the superconductor to its position in a magnetic field when in-between the first and second critical temperatures. BCS
 theory fails to accurately describe type II superconductors. There are no fully worked out explanations as to how these work.
 
@@ -66,9 +66,9 @@ depending on if it is a type I or type II superconductor
 ## Monte Carlo Random Sampling
 The Monte Carlo random sampling method is a broad class of computational algorithms used in many areas such as condensed matter physics,
 statistical, analysis, finance, machine learning, and graphics. The core principle is that one can learn about a dynamic and complex
-system by simulating it with random sampling to obtain "average" numerical results. It uses principles of randomness to provide 
-solutions to problems that are often deterministic in nature. This is useful for 
-problems that have exponentially growing computational needs and time 
+system by simulating it with random sampling to obtain "average" numerical results. It uses principles of randomness to provide
+solutions to problems that are often deterministic in nature. This is useful for
+problems that have exponentially growing computational needs and time
 complexity.
 
 ## PseudoCode
