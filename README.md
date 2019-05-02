@@ -20,7 +20,7 @@ Superconductivity is a state that certain materials can take where they have zer
 effects, the most prominent being that superconductors repel magnetic fields.
 These superconducting states are normally achieved at super low temperatures.
 The holy grail of superconductivity would be a room-temperature
-superconductor. This would have applications in almost all aspects of day to day life
+superconductor. This would have applications in almost all aspects of day to day life.
 
 ## How are Super Conductors described?
 Type I superconductors are described using the BCS theory model, first
