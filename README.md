@@ -8,10 +8,10 @@ approximations that can help develop an intuition for what is occurring physical
 This would not have been possible to make without the incredible mentorship given to me at the ISSYP summer camp.
 
 ### Running Instructions:
-1. Ensure that python3 is installed
-2. Ensure that matplotlib is installed
-3. make sure that numpy is installed
-4. run the python file with python3
+1. Install **python 3.6 <=**
+2. Install **matplotlib**
+3. Install **numpy**
+4. Run **superconductor.py** with `python3 superconductor.py`
 
 # Explanation of Physics behind Simulation
 
