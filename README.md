@@ -7,7 +7,7 @@ supercomputer. For this reason, the Monte Carlo random sampling algorithm is a v
 approximations that can help develop an intuition for what is occurring physically.
 This would not have been possible to make without the incredible mentorship given to me at the ISSYP summer camp.
 
-![](superconductor.gif)
+![](img/superconductor.gif)
 
 
 ### Running Instructions:
