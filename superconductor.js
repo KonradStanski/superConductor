@@ -1,7 +1,7 @@
 // superconductor simulator in JavaScript with p5.js
 
 // declaration of variables
-var slider1;
+var slider;
 
 var xCanvas = 600
 var yCanvas = 600
@@ -97,7 +97,7 @@ function mcStep(temp) {
     var xPos = xArr[i]*(xCanvas/xSize)*0.95 + xCanvas*0.05
     var yPos = yArr[i]*(yCanvas/ySize)*0.95 + yCanvas*0.05
     var length = Math.min(xCanvas, yCanvas)/min(xSize, ySize)/2.5
-    var color = 'rgb(' + Math.floor(colorArr[i]) + ', 0, 150)'
+    var color = 'rgb(' + Math.floor(colorArr[i]) + ', 0, 0)'
     drawArrowCentered(xPos, yPos, length, thetaArr[i], color)
   }
 }
@@ -125,17 +125,18 @@ function drawArrowCentered(x, y, length, theta, color) {
 
 function setup() {
   createCanvas(xCanvas, yCanvas);
-  slider1 = createSlider(0, 10, 5, 0.0001);
+  slider = createSlider(0, 10, 5, 0.0001);
+  slider.position(10, 6);
   textSize(20);
 }
 
 function draw() {
   // init
-  background(0);
+  background(100);
   fill(255);
-  
+
   // get value
-  var temp = slider1.value();
-  text("temp: " + temp + "K", 10, 20);
+  var temp = slider.value();
+  text("temp: " + temp + "K", 150, 17);
   mcStep(temp)
 }
