@@ -5,7 +5,7 @@ This particular simulation uses the XY Monte Carlo random sampling method to get
 Running a perfect simulation of a type I superconductor without this statistical approximation would require the computing strength of a
 supercomputer. For this reason, the Monte Carlo random sampling algorithm is a very powerful tool as it allows semi-accurate
 approximations that can help develop an intuition for what is occurring physically.
-This would not have been possible to make without the incredible mentorship given to me at the ISSYP summer camp.
+The wonderfull mentorship given to me at issyp taught me the necessary skills to recreate this in javascript.
 
 ![](img/superconductor.gif)
 
